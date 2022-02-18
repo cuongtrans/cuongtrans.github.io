@@ -1,0 +1,31 @@
+/*Declaration of CSS variables for light/dark theme*/
+
+html[data-theme="light"] {
+  --col-icon:black;
+  --col-bd-radius:rgb(2, 2, 2);
+  --col-box-shadow:#000000 2px 2px 4px, 
+  #4D4D4D -2px -2px 4px;
+ --col-box-shadow-hover:inset #8a7373 2px 2px 4px, 
+ inset #4D4D4D -2px -2px 4px;
+  --col-bd-icon:transparent;
+  --bg-icon: #fff;
+   --bg1-color: #fff;
+  --col-icon-linkedin: #020202;
+  --col-icon-facebook: #020202;
+  --col-icon-github: #020202;
+  --shadow-col: rgba(0, 0, 0, 0.3);
+
+}
+
+html[data-theme="dark"] {
+  --col-icon:white;
+  --col-bd-radius:black;
+  --col-bd-icon:transparent;
+  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7) , -5px -5px 10px rgba(255,255,255,0.1);
+  --col-box-shadow-hover:inset rgba(255, 255, 255, 1) 2px 2px 4px, 
+ inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
+  --col-icon-linkedin: #fff;
+  --col-icon-facebook: #fff;
+  --col-icon-github: #fff;
+  --col-white: #fff;
+}
