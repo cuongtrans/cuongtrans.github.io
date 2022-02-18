@@ -29,3 +29,141 @@ html[data-theme="dark"] {
   --col-icon-github: #fff;
   --col-white: #fff;
 }
+
+/*Social icons*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.socialicon{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+/* Particle effect*/
+body{
+  font-family: "Roboto";
+}
+#home
+
+.section {
+  background-color: rgb(63, 25, 170);
+  justify-content: center;
+  align-items: center;
+}
+
+.text .header {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 25px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+
+.animated-text span.active {
+  display: inline;
+}
+
+.animated-text:after {
+  content: ".";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  background: var(--col-icon);
+  animation: blink 0.5s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*Social icons*/
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.2s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+a.socialicon {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.socialicon{
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.socialicon i {
+  margin: auto;
+  font-size: 24px;
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
