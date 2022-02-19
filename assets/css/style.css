@@ -302,7 +302,9 @@ color: #FFFFFF !important;
   .current-link:after {
       content: "";
       position: absolute;
-      left: 20%;
+      left: 34%;
+      margin-left: auto;
+      margin-right: auto;
       bottom: 0;
       width: 32%;
       border-bottom: 3px solid #0045BC;
@@ -311,6 +313,8 @@ color: #FFFFFF !important;
   .nav-item-hover::after {
       content: "";
       display: block;
+      margin-left: auto;
+      margin-right: auto;
       height: 2px;
       bottom: 0;
       width: 0;
@@ -319,7 +323,7 @@ color: #FFFFFF !important;
   }
   
   .nav-item:hover::after {
-      width: 3%;
+      width: 50%;
   }
 
   li.nav-item {
@@ -328,6 +332,14 @@ color: #FFFFFF !important;
   a.nav-link {
       padding: 5px 5px !important;
   }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      align-items: center;
+  }
+}
+
 /**Navbar burger animations**/
 
 .navbar-toggler {
@@ -385,28 +397,26 @@ color: #FFFFFF !important;
   stroke-width: 6;
 }
 
-
 /*
 ------------------------
   FOOTER SECTION
 ------------------------
 */
 
-
 /* Also have a look at the scroll to top button if changing footer's height (below upArrow in app.js) */
 
 .footer {
   padding-top: 10px;
-  font-family: "Poppins", sans-serif;
-  background-color: #121212;
+  font-family: "Roboto";
+  background-color: #1E2A3A;
 }
 
 .tag {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto";
   font: size 20px;
   line-height: 26px;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   height: 78px;
   margin: 5px auto 0px;
   display: block;
@@ -426,7 +436,7 @@ color: #FFFFFF !important;
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: ##FEFEFE;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -445,12 +455,12 @@ Contact Form In Footer
   height: auto;
   width: auto;
   text-align: left;
-  color: #fff;
+  color: #FFF;
   display: inline;
   font-size: 25px;
   font-weight: 200;
   line-height: 22px;
-  border-bottom: 3px solid #bb86fc;
+  border-bottom: 3px solid #0045BC;
 }
 
 .form-header {
@@ -471,7 +481,7 @@ form {
 */
 
 .form-style-6 {
-  font: 95% Arial, Helvetica, sans-serif;
+  font: 95% Roboto;
   max-width: 400px;
   margin: 10px auto;
   padding: 16px;
@@ -479,11 +489,11 @@ form {
 }
 
 .form-style-6 h1 {
-  background: #bb86fc;
+  background: #0045BC;
   font-size: 140%;
   font-weight: 300;
   text-align: center;
-  color: #fff;
+  color: #FFF;
   margin: -16px -16px 16px -16px;
 }
 
@@ -509,10 +519,10 @@ form {
   background: transparent;
   margin-bottom: 4%;
   border: #000;
-  border-bottom: 2px solid #bb86fc;
+  border-bottom: 2px solid #0045BC;
   padding: 3%;
-  color: rgb(107, 105, 105);
-  font: 95% Arial, Helvetica, sans-serif;
+  color: rgb(254, 254, 254);
+  font: 95% Roboto;
   border-radius: 2px;
 }
 
@@ -526,9 +536,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-  box-shadow: 0 0 5px #bb86fc;
+  box-shadow: 0 0 5px #0045BC;
   padding: 3%;
-  border: 1px solid #bb86fc;
+  border: 1px solid #0045BC;
   border-radius: 2px;
 }
 
@@ -540,19 +550,19 @@ form {
   width: 100%;
   margin-top: 2rem;
   padding: 3%;
-  background: #bb86fc;
-  border-bottom: 2px solid #bb86fc;
+  background: #0045BC;
+  border-bottom: 2px solid #0045BC;
   border-radius: 23px;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  color: #fff;
+  color: #FFF;
   font-size: 20px;
 }
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover {
-  background:#6a00bbd2;;
+  background:#0045BC;;
 
 }
 
@@ -560,14 +570,13 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto";
 }
 
 .footer hr {
   background-color: rgb(37, 51, 46);
   height: 1.5px;
 }
-
 
 /* to make the navbar open full screen on mobile */
 
@@ -650,6 +659,7 @@ form {
   -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
+
 /*
 ----------------------------
 Send button micro animation
@@ -674,13 +684,13 @@ outline: none;
 }
 #lnch {
   font-size: 25px;
-  color: #fff;
+  color: #FFF;
   line-height: 1;
   /* padding: 20px 25px; */
   text-align: center;
   border-radius: 50px;
   transition: 0.5s ease background-color, 0.5s ease box-shadow;
-  background: #6a00bbd2;
+  background: #0045BC;
   box-shadow: 0 10px 15px -6px lavender;
 }
 #lnch_btn {
@@ -689,14 +699,14 @@ outline: none;
   right: 0;
   font-size: 22px;
   line-height: 1;
-  color: #fff;
+  color: #FFF;
  padding: 10px 50px;
   cursor: pointer;
   transition: 0.3s ease transform;
 }
 #lnch.launching {
-  background-color: #f39c12;
-  box-shadow: 0 10px 20px -6px #f39c12;
+  background-color: ##F39C12;
+  box-shadow: 0 10px 20px -6px #F39C12;
 }
 #lnch_btn.launching {
   transform: rotateZ(-90deg);
@@ -723,8 +733,8 @@ outline: none;
 }
 
 #lnch.launched {
-  background-color: #27ae60;
-  box-shadow: 0 10px 20px -6px #27ae60;
+  background-color: #27AE60;
+  box-shadow: 0 10px 20px -6px #27AE60;
 }
 
 #lnch_btn.launched {
