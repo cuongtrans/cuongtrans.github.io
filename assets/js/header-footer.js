@@ -14,11 +14,11 @@ let header = $(`
 </div>
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
   <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item nav-item-hover"><a class="nav-link" href="resume.html">Resume</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link current-link" href="index.html">Home</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link current-link" href="education.html">Education</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link current-link" href="experience.html">Experience</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link current-link" href="projects.html">Projects</a></li>
+   <li class="nav-item nav-item-hover"><a class="nav-link current-link" href="resume.html">Resume</a></li>
    <li class="nav-item"><input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked></li>
   </ul>
 </div>
@@ -37,11 +37,12 @@ let footer = $(`
       <p class="tag" >Develop a passion for learning. If you do, you will never cease to grow.</p>
     </div>
     
-   <div class="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
+    <div class="container">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
           <div class="form-style-6">
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
-              </div>
+             </div>
                 <form>
                   <form name="form1" action="https://formcarry.com/s/S2thQbCqEvW"  method="POST" accept-charset="UTF-8" >
                   <input id="name" type="text" name="field1" placeholder="Your Name" required/>
@@ -51,7 +52,8 @@ let footer = $(`
                   <button id="lnch" type="button" value="Send">Send</button>
                   </div>
                 </form>
-            </div>
+          </div>
+       </div> 
      </div>
    </div>
 </footer>`);
