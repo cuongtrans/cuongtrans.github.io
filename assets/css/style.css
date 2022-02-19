@@ -1,19 +1,18 @@
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
-  --bg-mybtn: red;
   --bg-nav: black;
   --bg-nav-img: black;
   --bg-footer: #DDE1EC;
-  --bg: #ffffff;
+  --bg: #FFFFFF;
   --text: #191919;
-  --text-color: #6c757d;
+  --text-color: #BEBCBB;
   --col-icon: black;
   --col-bd-radius: rgb(2, 2, 2);
   --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
   --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
   --col-bd-icon: transparent;
-  --bg-icon: #fff;
+  --bg-icon: #FFF;
   --col-icon-linkedin: #020202;
   --col-icon-facebook: #020202;
   --col-icon-github: #020202;
@@ -21,13 +20,12 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --bg-mybtn: rgb(230, 109, 129);
   --bg-nav: #6617cb;
   --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
   --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
-  --bg: #191919;
-  --text: #ffffff;
-  --text-color: #fff;
+  --bg: #1E2A3A;
+  --text: #FFFFFF;
+  --text-color: #FFF;
   --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   --txt-fill: transparent;
   --col-icon: white;
@@ -38,7 +36,7 @@ html[data-theme="dark"] {
    --col-icon-linkedin: #020202;
   --col-icon-facebook: #020202;
   --col-icon-github: #020202;
-  --col-white: #fff;
+  --col-white: #FFF;
 }
 
 /*
@@ -48,32 +46,28 @@ html[data-theme="dark"] {
 */
 
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #0045BC;
-  border-radius: 2px;
-  background: #f1f1f1;
+  background: #F1F1F1;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  max-height: 10px;
-  -webkit-box-shadow: inset 0 0 6px #0045BC;
+  border-radius: 10px;
+  max-height: 4px;
   background: #0045BC;
   transition: 0.3s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0045BC;
-  
+  background: #0045BC;  
 }
 
 /* Custom Scrollbar for Mozilla Firefox*/
 html{
   overflow-y: visible;
-  scrollbar-color: #0045BC #f1f1f1;
+  scrollbar-color: #0045BC #F1F1F1;
   scrollbar-width: auto;
 }
 
@@ -96,11 +90,10 @@ body {
   width: 50px;
   height: 50px;
   background-color: #0045BC;
-  color: #fff;
+  color: #FFF;
   margin: 8px;
   border: none;
   border-radius: 50%;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   position: fixed;
   outline: none;
@@ -230,7 +223,6 @@ html {
   border-radius: 50px;
   outline: none;
   transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px gray;
 }
 
 .dark_toggler:before {
@@ -243,56 +235,55 @@ html {
   background-color: navy;
   border-radius: 50px;
   transition: all 0.9s;
-  background-color: #f7ca33;
+  background-color: #FEE715;
 }
 
 .dark_toggler:checked {
   background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
   transition: background-image 0.9s;
-  box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
 }
 
 .dark_toggler:checked:before {
   transform: translate(150%);
   transition: all 0.9s;
-  background-color: #bb86fc;
+  background-color: #0045BC;
 }
 /* end of dark mode toggle switch button */
 
 html {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   transition: background-color .3s;
 }
 
 html[light-mode="dark"] {
   background-color: #141516;
-  color: #ced4e2;
+  color: #C5C9CC;
 }
 
 .dark-theme {
-  background-color: #2b2a2A;
+  background-color: #1E2A3A;
   transition: background-color .3s;
   box-shadow: 0 0 0;
 }
 
 .dark-theme .navbar-nav .nav-link,
 .dark-theme .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(197, 201, 204, 0.8);
 }
 
 .dark-theme .nav-link:hover{
-color: #ffffff !important;
+color: #FFFFFF !important;
 }
 
 .dark-theme .first,
 .dark-theme .second,
 .dark-theme .third {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(197, 201, 204, 0.8);
 }
 .dsc{
    box-shadow:   2px 5px 5px 0px rgb(130 216 251), 
    inset -2px -5px 5px 0px rgb(130 216 251);
-   background: #1f1d1d;
+   background: #1E2A3A;
 }
 
 /*
@@ -306,56 +297,37 @@ color: #ffffff !important;
       font-weight: bolder;
       position: relative;
       z-index: 1;
-      text-align: center;
+      text-align: left;
   }
   .current-link:after {
       content: "";
       position: absolute;
-      left: 34%;
-      margin-left: auto;
-      margin-right: auto;
+      left: 20%;
       bottom: 0;
       width: 32%;
-      border-bottom: 3px solid #6a00bb;
+      border-bottom: 3px solid #0045BC;
   }
   
   .nav-item-hover::after {
       content: "";
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      height: 0.15em;
+      height: 2px;
       bottom: 0;
-      width: 0%;
-      background-color: #6a00bb;
+      width: 0;
+      background-color: #0045BC;
       transition: all ease-in-out 280ms;
   }
   
   .nav-item:hover::after {
-      width: 50%;
-      
+      width: 3%;
   }
 
   li.nav-item {
-      text-align: center;
+      text-align: left;
   }
   a.nav-link {
-      padding: 6px 21px !important;
+      padding: 5px 5px !important;
   }
-
-  /* Hide svg on laptop screens to prevent overlap between sidebar and navbar */
-  .bike {
-      display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-      align-items: center;
-  }
-}
-
-
 /**Navbar burger animations**/
 
 .navbar-toggler {
