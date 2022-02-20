@@ -17,9 +17,9 @@ $(document).ready(function () {
         $(document).height() - 838
       ) {
         // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $("#btnScrollToTop").css("background-color", "#0045BC");
       } else {
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
+        $("#btnScrollToTop").css("background-color", "#0045BC");
       }
     }
   });
