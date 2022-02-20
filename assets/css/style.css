@@ -56,8 +56,8 @@ html[data-theme="dark"] {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  max-height: 4px;
+  border-radius: 2px;
+  max-height: 10px;
   background: #0045BC;
   transition: 0.3s;
 }
