@@ -16,7 +16,7 @@ particlesJS("particles-js", {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#FFF",
+        color: "#000000",
       },
       polygon: {
         nb_sides: 5,
@@ -69,9 +69,10 @@ particlesJS("particles-js", {
         rotateY: 1200,
       },
     },
+    nb: 80
   },
   interactivity: {
-    detect_on: "window",
+    detect_on: "canvas",
     events: {
       onhover: {
         enable: !1,
@@ -85,7 +86,9 @@ particlesJS("particles-js", {
     modes: {
       grab: {
         distance: 400,
-        line_linked:{opacity:1}
+        line_linked: {
+          opacity: 1
+        }
       },
       bubble: {
         distance: 400,
@@ -101,10 +104,13 @@ particlesJS("particles-js", {
       push: {
         particles_nb: 4,
       },
+      remove: {
+        particles_nb: 2
+      },
     },
   },
   retina_detect: !0,
-});
+} !1);
 
 const allElements = document.querySelectorAll(".animated-text");
 
