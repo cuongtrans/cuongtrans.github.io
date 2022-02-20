@@ -53,47 +53,37 @@ body{
   position: absolute;
 }
 
-.run-text li{
-  list-style:none;
-  color: rgb(0, 69, 188);
-  font-size: 25px;
-  font-weght: 400;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
+.animated-text span {
+  display: none;
+  line-height: 1;
 }
 
-@keyframes slide {
-  100%{
-    top: -360px;
+.animated-text span.active {
+  display: inline;
+}
+
+.animated-text:after {
+  content: "Designing, UI/UX, Cloud Computing, Web Development, Open Source, Mentoring";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  background: var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+  from {
     opacity: 0;
   }
-}
 
-.run-text li span{
-  position: relative;
-  margin: 5px;
-  line-height: 90px;
-}
-
-.run-text li span::after{
-  content:"";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #141516;
-  border-left: 3px solid #0045BC;
-  animation: typing 3s steps(12) infinite;
-}
-
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
-    opacity: 0;
-  }
-  100%{
-    left: 0;
+  to {
+    opacity: 1;
   }
 }
 
