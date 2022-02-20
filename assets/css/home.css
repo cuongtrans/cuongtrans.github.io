@@ -63,27 +63,23 @@ body{
 }
 
 .animated-text:after {
-  content: "Designing, UI/UX, Cloud Computing, Web Development, Open Source, Mentoring";
+  content: ".";
   display: inline;
   width: 6px;
   text-indent: 0;
   background: var(--col-icon);
-  animation: blink 0.3s infinite alternate;
+  animation: typing 1.5s steps(10) infinite;
 }
 .datawords{
   white-space: nowrap;
-    overflow: visible;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-@keyframes blink {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+@keyframes typing {
+  100%{
+    left: %100;
   }
 }
 
