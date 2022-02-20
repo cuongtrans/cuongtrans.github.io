@@ -110,7 +110,7 @@ particlesJS("particles-js", {
     },
   },
   retina_detect: !0,
-} !1);
+});
 
 const allElements = document.querySelectorAll(".animated-text");
 
