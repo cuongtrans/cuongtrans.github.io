@@ -1,6 +1,7 @@
 /*CSS variable declaration for light/dark mode*/
 
 html[data-theme="light"] {
+  --bg-mybtn: red;
   --bg-nav: black;
   --bg-nav-img: black;
   --bg-footer: #DDE1EC;
@@ -20,9 +21,10 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --bg-nav: #6617cb;
-  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
-  --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
+  --bg-mybtn: rgb(230, 109, 129);
+  --bg-nav: #6617CB;
+  --bg-nav-img: linear-gradient(315DEG, #6617CB 0%, #882463 74%);
+  --bg-footer: linear-gradient(315DEG, #6617CB 0%, #882463 74%);
   --bg: #1E2A3A;
   --text: #FFFFFF;
   --text-color: #FFF;
@@ -297,7 +299,7 @@ color: #FFFFFF !important;
       font-weight: bolder;
       position: relative;
       z-index: 1;
-      text-align: left;
+      text-align: center;
   }
   .current-link:after {
       content: "";
@@ -315,7 +317,7 @@ color: #FFFFFF !important;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      height: 2px;
+      height: 0.15em;
       bottom: 0;
       width: 0;
       background-color: #0045BC;
@@ -327,10 +329,10 @@ color: #FFFFFF !important;
   }
 
   li.nav-item {
-      text-align: left;
+      text-align: center;
   }
   a.nav-link {
-      padding: 5px 5px !important;
+      padding: 6px 21px !important;
   }
 }
 
@@ -422,30 +424,6 @@ color: #FFFFFF !important;
   display: block;
   box-sizing: border-box;
 }
-
-.svg-inline--fa {
-  vertical-align: -0.200em;
-}
-
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: ##FEFEFE;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 
 /************
 Contact Form In Footer
@@ -700,7 +678,7 @@ outline: none;
   font-size: 22px;
   line-height: 1;
   color: #FFF;
- padding: 10px 50px;
+  padding: 10px 50px;
   cursor: pointer;
   transition: 0.3s ease transform;
 }
