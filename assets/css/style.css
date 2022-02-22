@@ -395,3 +395,76 @@ h4 {
     font-size: 1.3rem;
   }
 }
+
+/* to make the navbar open full screen on mobile */
+
+@media (max-width: 768px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  .footer {
+      padding-top: 10px;
+  }
+  #navbar-content {
+      margin-top: -200px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -180px;
+      height: 120vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .collapse navbar-collapse {
+      display: flex;
+      justify-content: center;
+  }
+  #navbar-content {
+      margin-top: -140px;
+      height: 130vh;
+      text-align: center;
+      transform: translateY(25%);
+  }
+  .footer {
+      margin-top: 6rem;
+  }
+  #btnScrollToTop {
+      display: none;
+  }
+}
+
