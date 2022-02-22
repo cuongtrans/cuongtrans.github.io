@@ -190,14 +190,28 @@ h4 {
   font-weight: 500;
 }
 
-.content .btn {
-  border: 1px solid #bbb;
-  font-weight: 600;
-  font-size: 0.8rem;
+.content .main-button {
+  background-color: #0045BC;
+  border: solid 1px #0045BC;
+  color: #FFF;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.content .btn span {
-  margin-left: 0.1rem;
+.button-div {
+  display: flex;
+  jusity-content: flex-start;
 }
 
 /* Hero Image */
