@@ -28,14 +28,14 @@
   --rotate-color: #FFF;
 }
 
-/* Reset */
+/*----- Reset -----*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Main  */
+/*----- Main  -----*/
 body {
   background: var(--bg-primary-color);
   color: var(--text-primary-color);
@@ -86,7 +86,7 @@ h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Navbar */
+/*----- Navbar -----*/
 .navbar {
   display: flex;
   flex-direction: row;
@@ -137,7 +137,7 @@ h4 {
   opacity: 1;
 }
 
-/* Hamburger menu */
+/*----- Hamburger Menu -----*/
 .hamburger {
   display: none;
 }
@@ -156,7 +156,8 @@ h4 {
   background-color: var(--text-primary-color);
 }
 
-/* Hero section */
+/*----- Hero Section -----*/
+
 #hero {
   height: 100vh;
   margin-bottom: 2rem;
@@ -199,11 +200,9 @@ h4 {
   margin-left: 0.1rem;
 }
 
-/* Hero image */
+/* Hero Image */
 .content .content-image img {
   width: 300px;
-  border: 1px solid var(--text-secondary-color);
-  border-radius: 50%;
   padding: 30px;
   transform: translateY(-40px);
 }
@@ -213,22 +212,7 @@ h4 {
   z-index: 1;
 }
 
-/* Circle Animation */
-@keyframes animation {
-  0% {
-    transform: translate(0);
-  }
-
-  50% {
-    transform: translate(40px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
-/* Navbar */
+/*----- Navbar -----*/
 @media (max-width: 768px) and (max-width: 701px) {
   .navbar {
     justify-content: space-between;
@@ -248,7 +232,7 @@ h4 {
 
   .navbar ul li a:hover {
     background-color: var(--primary-color);
-    color: #fff;
+    color: #FFF;
   }
 
   .nav-menu {
@@ -263,7 +247,8 @@ h4 {
     background-color: var(--bg-secondary-color);
   }
 
-  /* Add spacing between hamburer and navigation menu */
+  /* Add Spacing Between Hamburer and Navigation Menu */
+  
   .nav-menu li:first-child {
     margin-top: 4rem;
   }
@@ -325,12 +310,6 @@ h4 {
     max-width: 300px;
   }
 
-  /* Hero circle */
-  #hero::after {
-    top: 5%;
-    left: 70%;
-  }
-
   .content .content-image {
     margin-top: 1rem;
   }
@@ -348,38 +327,6 @@ h4 {
   .content p {
     margin: 1rem 0;
   }
-
-  .skills .box-header {
-    transform: translateY(-50px);
-    padding-bottom: 0;
-  }
-
-  .skills .box-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .form-container {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
-
-  .form-image {
-    height: 200px;
-  }
-
-  #skills {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .skills .box-container {
-    grid-template-columns: 1fr;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 400px) {
@@ -396,75 +343,95 @@ h4 {
   }
 }
 
-/* to make the navbar open full screen on mobile */
+/*----- Scroll Bar -----*/
 
-@media (max-width: 768px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  max-height: 5px;
+  background: #0045BC;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0045BC;  
+}
+
+/* Custom Scrollbar for Mozilla Firefox */
+html{
+  overflow-y: visible;
+  scrollbar-color: #0045BC #F1F1F1;
+  scrollbar-width: auto;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  font-family: "Roboto";
+  background-color: var(--bg);
+}
+.text-center heading1 exp-head {
+  color: white;
+}
+
+
+/*----- Scroll to Top button -----*/
+
+#btnScrollToTop {
+  width: 50px;
+  height: 50px;
+  background-color: #0045BC;
+  color: #FFF;
+  margin: 8px;
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+  position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+}
+
+/* Scroll to Top Button Animation */
+
+@keyframes up {
+  0% {
+      transform: translate(0);
   }
-  .footer {
-      padding-top: 10px;
+  20% {
+      transform: translateY(-15px);
   }
-  #navbar-content {
-      margin-top: -200px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  #btnScrollToTop {
-      display: none;
+  40% {
+      transform: translate(0);
   }
 }
 
-@media (max-width: 414px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
+@-webkit-keyframes up {
+  0% {
+      transform: translate(0);
   }
-  #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
+  20% {
+      transform: translateY(-15px);
   }
-  #btnScrollToTop {
-      display: none;
+  40% {
+      transform: translate(0);
   }
 }
 
-@media (max-width: 375px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  #btnScrollToTop {
-      display: none;
-  }
-}
+/* Smooth Scrolling To Top */
 
-@media (max-width: 320px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  #navbar-content {
-      margin-top: -140px;
-      height: 130vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  .footer {
-      margin-top: 6rem;
-  }
-  #btnScrollToTop {
-      display: none;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
