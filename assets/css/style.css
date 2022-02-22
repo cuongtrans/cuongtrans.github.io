@@ -28,7 +28,7 @@
   --rotate-color: #FFF;
 }
 
-/* -- Scroll Bar -- */
+/*----- Scroll Bar -----*/
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -69,7 +69,7 @@ body {
 }
 
 
-/* Scroll to Top button */
+/*----- Scroll to Top button -----*/
 
 #btnScrollToTop {
   width: 50px;
@@ -88,7 +88,7 @@ body {
   -webkit-animation: up 1.5s infinite;
 }
 
-/*----- Scroll to Top Button Animation -----*/
+/* Scroll to Top Button Animation */
 
 @keyframes up {
   0% {
@@ -118,6 +118,13 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/*----- Reset -----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*----- Main -----*/
@@ -301,6 +308,8 @@ h4 {
   z-index: 1;
 }
 
+/*----- Navbar -----*/
+
 @media (max-width: 768px) and (max-width: 701px) {
   .navbar {
     justify-content: space-between;
@@ -438,6 +447,7 @@ h4 {
 
 
 /*----- Circle Animation -----*/
+
 @keyframes animation {
   0% {
     transform: translate(0);
@@ -631,13 +641,4 @@ input:checked + .slider:before {
     padding: 1rem;
     width: 100%;
   }
-
-/*----- Particles Effect -----*/
-  
-#particle,
-#particles-js {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
 
