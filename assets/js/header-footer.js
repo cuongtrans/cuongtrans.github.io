@@ -1,172 +1,63 @@
-"use strict";
+// ?Hamburger menu
 
-$(document).ready(function () {
-  // updating the color of the swiper bullets (initial update of color)
-  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-  //function for the "Scroll To Top" button to detect the footer
-  $(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
-    if ($(window).scrollTop() < $(window).height()) {
-      $("#btnScrollToTop").css("visibility", "hidden");
-    } else {
-      $("#btnScrollToTop").css("visibility", "visible");
-      //The button will change it's color when it hits the footer
-      if (
-        $(window).scrollTop() + $(window).height() >
-        $(document).height() - 838
-      ) {
-        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-        $("#btnScrollToTop").css("background-color", "#0045BC");
-      } else {
-        $("#btnScrollToTop").css("background-color", "#0045BC");
-      }
-    }
-  });
-});
+hamburger.addEventListener("click", mobileMenu);
 
-//function to scroll to top
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-};
-
-// Window Loads
-$(function () {
-  let bodyElement = $(`body`);
-  bodyElement.prepend(header);
-  bodyElement.append(footer);
-  bodyElement.append(upArrow);
-  $("#btnScrollToTop").css("visibility", "hidden");
-
-  //toggler hamburger functions
-  const menuBtn = document.querySelector(".navbar-toggler");
-  let menuOpen = false;
-  menuBtn.addEventListener("click", () => {
-    if (!menuOpen) {
-      menuBtn.classList.add("open");
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove("open");
-      menuOpen = false;
-    }
-  });
-});
-
-// function for toggling hamburger is-active class
-
-$(function () {
-  $("#js-hamburger").on("click", function () {
-    $(this).toggleClass("is-active");
-  });
-});
-
-// Navbar current page highlight
-
-let loader = document.querySelector(".loader-container");
-
-window.addEventListener("load", vanish);
-
-function vanish() {
-  loader.classList.add("disappear");
-}
-$(function () {
-  $("a.nav-link").each(function () {
-    if ($(this).prop("href") == window.location.href) {
-      $(this).addClass("current-link");
-    }
-  });
-});
-
-//function to remove underline on hover
-
-$(document).ready(function () {
-  $("a.nav-link").hover(
-    function () {
-      $(this).removeClass("current-link");
-    },
-    function () {
-      if ($(this).prop("href") == window.location.href) {
-        $(this).addClass("current-link");
-      }
-    }
-  );
-});
-
-//consistent light mode for page change
-if (localStorage.getItem("lightMode") == "light") {
-  var app = document.getElementsByTagName("HTML")[0];
-  app.setAttribute("light-mode", "light");
-
-  //to add dark theme to nav bar after its been loaded
-  window.addEventListener("load", function () {
-    var nav = document.getElementById("navbar");
-    nav.classList.remove("dark-theme");
-    document.getElementById("dark_toggler").checked = false;
-  });
-
-  var sc = document.getElementsByClassName("socialicon");
-  for (var i = 0; i < sc.length; i++) {
-    sc[i].classList.remove("dsc");
-  }
-} else {
-  localStorage.setItem("lightMode", "dark");
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
-function toggle_light_mode() {
-  console.log(localStorage.getItem("lightMode"));
-  var app = document.getElementsByTagName("HTML")[0];
-  var nav = document.getElementById("navbar");
-  if (localStorage.lightMode == "dark") {
-    localStorage.lightMode = "light";
-    app.setAttribute("light-mode", "light");
-    nav.classList.remove("dark-theme");
-    var sc = document.getElementsByClassName("socialicon");
-    for (var i = 0; i < sc.length; i++) {
-      sc[i].classList.remove("dsc");
-    }
+// Close navbar when link is clicked
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
+// Event Listeners: Handling toggle event
+
+const toggleSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
   } else {
-    nav.classList.add("dark-theme");
-    localStorage.lightMode = "dark";
-    app.setAttribute("light-mode", "dark");
-    var sc = document.getElementsByClassName("socialicon");
-    for (var i = 0; i < sc.length; i++) {
-      sc[i].classList.add("dsc");
-    }
+    document.documentElement.setAttribute("data-theme", "light");
   }
-
-  // updating the swiper bullets
-  updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
 
-// function to update swiper bullets
-function updateColorOfSwiperBullets(lightMode) {
-  document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
-    if (lightMode == "light") {
-      bullet.style.backgroundColor = "blue";
-    } else {
-      bullet.style.backgroundColor = "white";
-    }
-  });
-}
+toggleSwitch.addEventListener("change", switchTheme, false);
 
-window.addEventListener("storage", function () {
-  if (localStorage.lightMode == "dark") {
-    app.setAttribute("light-mode", "dark");
+//  Store color theme for future visits
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark"); //add this
   } else {
-    app.setAttribute("light-mode", "light");
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light"); //add this
   }
-});
+}
 
-// Function to remove scroll bar during preload
-$(window).on("load", function () {
-  setTimeout(function () {
-    $(".no-scroll-preload").css("overflow", "visible");
-  }, 1000);
-  $(".loader-container").fadeOut(2500);
-});
+// Save user preference on load
 
-     
+const currentTheme = localStorage.getItem("theme")
+  ? localStorage.getItem("theme")
+  : null;
+
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+
+  if (currentTheme === "dark") {
+    toggleSwitch.checked = true;
+  }
+}
