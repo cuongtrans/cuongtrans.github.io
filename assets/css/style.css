@@ -165,6 +165,20 @@ h4 {
   overflow: hidden;
 }
 
+#hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5px;
+  right: -200px;
+  background-color: var(--primary-color);
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  z-index: -10;
+  transition: 0.5s;
+  animation: animation 4s infinite alternate-reverse forwards ease-in-out;
+}
+
 #hero .content {
   display: flex;
   align-items: center;
