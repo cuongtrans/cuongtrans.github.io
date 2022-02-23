@@ -178,6 +178,7 @@ h4 {
 
 .content h1 {
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .content h2 {
@@ -209,14 +210,48 @@ h4 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.button-div {
-  display: flex;
-  jusity-content: flex-start;
+.content .animated-text {
+  color: #0045BC; 
+}
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+
+.animated-text span.active {
+  display: inline;
+}
+
+.animated-text:after {
+  content: "";
+  display: inline;
+  width: 6px;
+  text-indent: 0;
+  animation: blink 0.3s infinite alternate;
+}
+.datawords{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Hero Image */
 .content .content-image img {
   width: 300px;
+  border: 5px solid var(--primary-color);
+  border-radius: 24%;
   padding: 30px;
   transform: translateY(-40px);
 }
