@@ -361,6 +361,25 @@ h4 {
   .content main-button {
     justify-content: center;
   }
+  
+  @media (max-width: 320px) {
+  #hero {
+    height: 100%;
+  }
+
+  .content h1 {
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  .content h2 {
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+  
+  .content main-button {
+    justify-content: center;
+  }
 }
 
 /*----- Scroll Bar -----*/
