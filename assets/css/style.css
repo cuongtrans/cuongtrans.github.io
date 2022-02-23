@@ -361,8 +361,9 @@ h4 {
   .content main-button {
     justify-content: center;
   }
-  
-  @media (max-width: 320px) {
+}
+
+@media (max-width: 320px) {
   #hero {
     height: 100%;
   }
@@ -378,6 +379,7 @@ h4 {
   }
   
   .content main-button {
+    font-size: 12px;
     justify-content: center;
   }
 }
