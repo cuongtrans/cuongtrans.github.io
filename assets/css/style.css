@@ -319,7 +319,7 @@ h4 {
   position: relative;
   left: 45%;
   margin-left: -140px;
-  z-index: 0;
+  z-index: 7;
 }
 
 .div-wrapper::after,
@@ -348,7 +348,7 @@ h4 {
 .code:first-child {
   top: 100px;
   background-position: 50% 0;
-  z-index: 5;
+  z-index: 4;
 }
 
 .code:nth-child(2) {
@@ -388,7 +388,7 @@ h4 {
 
 .reveal:first-child {
   background-position: 50% 0;
-  z-index: 6;
+  z-index: 5;
 }
 
 .reveal:nth-child(2) {
