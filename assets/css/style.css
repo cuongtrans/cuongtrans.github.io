@@ -392,12 +392,12 @@ h4 {
 }
 
 .reveal:nth-child(2) {
-  background-position: 50% - 100px;
+  background-position: 50% -100px;
   z-index: 4;
 }
 
 .reveal:nth-child(3) {
-  background-position: 50% - 200px;
+  background-position: 50% -200px;
   z-index: 2;
 }
 
