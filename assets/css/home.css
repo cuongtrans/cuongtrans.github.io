@@ -1,8 +1,9 @@
 /* Utilities */
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 1rem;
+  max-width: 1260px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .color-1 {
