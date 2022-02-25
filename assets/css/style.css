@@ -163,7 +163,7 @@ h4 {
 /*----- Hero Section -----*/
 
 #hero {
-  height: 100vh;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
