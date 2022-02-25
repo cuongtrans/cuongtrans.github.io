@@ -163,7 +163,7 @@ h4 {
 /*----- Hero Section -----*/
 
 #hero {
-  height: 500px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -177,17 +177,17 @@ h4 {
   padding-left: 30px;
   position: relative;
   height: 100%;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .content h1 {
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .content h2 {
   max-width: 800px;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 
 .content p {
