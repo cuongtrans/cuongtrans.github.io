@@ -440,6 +440,7 @@ body:not(.no-js) .draggable.is-dragging {
   background-size: 15px 15px,15px 15px,15px 15px,100% 40px;
   background-position: 10px 12px,30px 12px,50px 12px,0 0;
   box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 #0045BC;
+  z-index: 10;
 }
 
 /*----- Navbar -----*/
