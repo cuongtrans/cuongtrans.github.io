@@ -55,10 +55,10 @@
 }
 
 /* Title text */
-.head-text {
-  text-align: center;
+.heading-bio {
+  text-align: relative;
   margin: 30px 0;
-  font-size: 1rem;
+  font-size: 32px;
   font-family: "Montserrat", sans-serif;
   color: var(--primary-color);
   font-weight: 600;
