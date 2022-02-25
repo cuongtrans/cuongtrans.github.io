@@ -163,7 +163,7 @@ h4 {
 /*----- Hero Section -----*/
 
 #hero {
-  height: 400px;
+  height: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -177,7 +177,7 @@ h4 {
   padding-left: 30px;
   position: relative;
   height: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .content h1 {
