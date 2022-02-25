@@ -442,14 +442,14 @@ body:not(.no-js) .draggable.is-dragging {
   background-image: radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), -webkit-gradient(linear, left top, left bottom, from(#0045BC), to(#0045BC));
   background-size: 15px 15px,15px 15px,15px 15px,100% 40px;
   background-position: 10px 12px,30px 12px,50px 12px,0 0;
-  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 #0045BC;
+  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 var(--bg-primary-color)C;
   z-index: 10;
 }
 
 .browser::before {
     height: 100px;
     width: 100%;
-    background-color: none;
+    background-color: var(--bg-primary-color);
     top: -100px;
     content: '';
     display: block;
@@ -461,7 +461,7 @@ body:not(.no-js) .draggable.is-dragging {
     height: 30px;
     width: 100%;
     background-repeat: no-repeat;
-    background-image: none;
+    background-image: var(--bg-primary-color);
     background-size: 100px 1px,100% 20px;
     background-position: center bottom;
     bottom: -30px;
