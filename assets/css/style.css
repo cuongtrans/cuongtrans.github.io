@@ -440,6 +440,11 @@ body:not(.no-js) .draggable.is-dragging {
   cursor: grabbing;
 }
 
+.cursor {
+  -webkit-animation:blink .9s alternate linear infinite;
+  animation:blink .9s alternate linear infinite;
+}
+
 .about-me .browser {
   width: 100%;
   height: 340px;
