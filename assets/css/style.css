@@ -319,6 +319,21 @@ h4 {
     z-index: 0;
 }
 
+.div-wrapper::after,
+.div-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: calc((50% - 80px / 2));
+    height: 160px;
+    bottom: 0
+}
+
+.div-wrapper::after {
+    right:0;
+}
+
 .about-me .code:first-child {
   top: 100px;
   position: absolute;
@@ -407,9 +422,22 @@ h4 {
    background-position: center bottom;
 }
 
-.draggable {
+body:not(.no-js) .drag-handle.handle-right{
+    width: 421px;
+    height: 73px;
+    background-repeat: no-repeat;
+    background-image:url(/assets/images/archive/2020/pull-tab-right.svg);
+    background-position:right bottom;
+}
+
+body:not(.no-js) .draggable {
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+body:not(.no-js) .draggable.is-dragging {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .about-me .browser {
