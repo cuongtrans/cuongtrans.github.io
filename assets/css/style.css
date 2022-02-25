@@ -442,7 +442,7 @@ body:not(.no-js) .draggable.is-dragging {
   background-image: radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), -webkit-gradient(linear, left top, left bottom, from(#0045BC), to(#0045BC));
   background-size: 15px 15px,15px 15px,15px 15px,100% 40px;
   background-position: 10px 12px,30px 12px,50px 12px,0 0;
-  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 var(--bg-primary-color)C;
+  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 var(--bg-primary-color);
   z-index: 10;
 }
 
