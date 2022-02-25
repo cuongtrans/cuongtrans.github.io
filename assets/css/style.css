@@ -165,7 +165,6 @@ h4 {
 #hero {
   height: 100vh;
   position: relative;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -177,8 +176,8 @@ h4 {
   padding-right: 30px;
   padding-left: 30px;
   position: relative;
-  height: 100%;
-  margin-top: 2rem;
+  height: 80%;
+  margin-top: 1rem;
 }
 
 .content h1 {
