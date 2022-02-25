@@ -311,60 +311,53 @@ h4 {
 }
 
 .div-wrapper {
-    width: 450px;
-    min-height: 580px;
-    position: relative;
-    left: 45%;
-    margin-left: -140px;
-    z-index: 0;
+  width: 450px;
+  min-height: 580px;
+  position: relative;
+  left: 45%;
+  margin-left: -140px;
+  z-index: 0;
 }
 
 .div-wrapper::after,
 .div-wrapper::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 10;
-    width: calc((50% - 80px / 2));
-    height: 160px;
-    bottom: 0
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: calc((50% - 80px / 2));
+  height: 160px;
+  bottom: 0
 }
 
 .div-wrapper::after {
-    right:0;
+  right:0;
 }
 
-.about-me .code:first-child {
-  top: 100px;
+.about-me .code {
   position: absolute;
   background-image: url(/assets/images/home-div-code.svg);
-  background-position: 50% 0;
-  z-index: 5;
   width: 100%;
   height: 100px;
   background-size: 100% auto;
+}
+
+.code:first-child {
+  top: 100px;
+  background-position: 50% 0;
+  z-index: 5;
 }
 
 .code:nth-child(2) {
   top: 200px;
-  position: absolute;
-  background-image: url(/assets/images/home-div-code.svg);
   background-position: 50% -100px;
   z-index: 3;
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
 }
 
 .code:nth-child(3) {
   top: 300px;
-  position: absolute;
-  background-image: url(/assets/images/home-div-code.svg);
   background-position: 50% -200px;
   z-index: 1;
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
 }
 
 .about-me .div-pull {
@@ -381,37 +374,28 @@ h4 {
   align-items: center;
 }
 
-.about-me .reveal:first-child {
-  background-position: 50% 0;
-  z-index: 6;
+.about-me .reveal {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background-image: url(/assets/images/home-div-illo.png);
   width: 100%;
   height: 100px;
   background-size: 100% auto;
+}
+
+.reveal:first-child {
+  background-position: 50% 0;
+  z-index: 6;
 }
 
 .reveal:nth-child(2) {
   background-position: 50% - 100%;
   z-index: 4;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  background-image: url(/assets/images/home-div-illo.png);
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
 }
 
 .reveal:nth-child(3) {
   background-position: 50% - 200%;
   z-index: 2;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  background-image: url(/assets/images/home-div-illo.png);
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
 }
 
 .drag-handle.handle-down {
@@ -455,7 +439,7 @@ body:not(.no-js) .draggable.is-dragging {
   background-image: radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), -webkit-gradient(linear, left top, left bottom, from(#0045BC), to(#0045BC));
   background-size: 15px 15px,15px 15px,15px 15px,100% 40px;
   background-position: 10px 12px,30px 12px,50px 12px,0 0;
-  box-shadow: 10px 10px 0 #FEE715;
+  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 #0045BC;
 }
 
 /*----- Navbar -----*/
