@@ -61,7 +61,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -301,110 +301,48 @@ h4 {
 }
 
 .about-me .visual {
-  display: grid;
-  place-content: center;
-  grid-column: 3;
-  grid-row: 1;
   position: relative;
+  display: grid;
   height: 100%;
   width: 100%;
   z-index: 1;
 }
 
-.div-wrapper {
-  width: 450px;
-  min-height: 580px;
-  position: relative;
-  left: 45%;
-  margin-left: -140px;
-  z-index: 0;
+.about-me .visual>img, .about-me .visual>svg {
+  right: 50%;
+  margin-right: -200px;
 }
 
-.div-wrapper::after,
-.div-wrapper::before {
-  content: '';
+.david-wrapper {
+  width: 813px;
+  height: 570px;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin-right: -500px;
+}
+
+.about-me .david-pull {
+    position: absolute;
+    width: 574px;
+    height: 538px;
+}
+
+.about-me img, .about-me svg {
+  width: 574px;
   display: block;
   position: absolute;
-  z-index: 10;
-  width: calc((50% - 80px / 2));
-  height: 160px;
-  bottom: 0
+  max-width: 1274px;
 }
 
-.div-wrapper::after {
-  right:0;
-}
-
-.about-me .code {
-  position: absolute;
-  background-image: url(/assets/images/home-div-code.svg);
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
-}
-
-.code:first-child {
-  top: 100px;
-  background-position: 50% 0;
-  z-index: 5;
-}
-
-.code:nth-child(2) {
-  top: 200px;
-  background-position: 50% -100px;
-  z-index: 3;
-}
-
-.code:nth-child(3) {
-  top: 300px;
-  background-position: 50% -200px;
-  z-index: 1;
-}
-
-.about-me .div-pull {
-  height: 480px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.about-me .reveal {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  background-image: url(/assets/images/home-div-illo.png);
-  width: 100%;
-  height: 100px;
-  background-size: 100% auto;
-}
-
-.reveal:first-child {
-  background-position: 50% 0;
-  z-index: 6;
-}
-
-.reveal:nth-child(2) {
-  background-position: 50% -100px;
-  z-index: 4;
-}
-
-.reveal:nth-child(3) {
-  background-position: 50% -200px;
-  z-index: 2;
+.about-me img {
+  bottom:-130px;
 }
 
 .drag-handle.handle-down {
-   width: 80px;
-   height: 200px;
-   background-repeat: no-repeat;
-   background-image: url(/assets/images/pull-tab-down.svg);
-   background-position: center bottom;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 body:not(.no-js) .drag-handle.handle-right{
@@ -430,43 +368,9 @@ body:not(.no-js) .draggable.is-dragging {
   animation:blink .9s alternate linear infinite;
 }
 
-.about-me .browser {
-  width: 100%;
-  height: 340px;
-  position: absolute;
-  top: 60px;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  background-image: radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), radial-gradient(circle, #F2F2F2 50%, rgba(242,242,242,0) 54%), -webkit-gradient(linear, left top, left bottom, from(#0045BC), to(#0045BC));
-  background-size: 15px 15px,15px 15px,15px 15px,100% 40px;
-  background-position: 10px 12px,30px 12px,50px 12px,0 0;
-  box-shadow: 10px 10px 0 #FEE715, 0 10px 0 #FEE715, 0 -10px 0 var(--bg-primary-color);
-  z-index: 10;
-}
-
-.browser::before {
-    height: 100px;
-    width: 100%;
-    background-color: var(--bg-primary-color);
-    top: -100px;
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 10;
-}
-
-.browser::after {
-    height: 30px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-image: var(--bg-primary-color);
-    background-size: 100px 1px,100% 20px;
-    background-position: center bottom;
-    bottom: -30px;
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 10;
+.about-me .cover-top {
+  height: 570px;
+  bottom: -80px;
 }
 
 /*----- Navbar -----*/
