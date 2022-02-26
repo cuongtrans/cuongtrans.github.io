@@ -374,9 +374,14 @@ body:not(.no-js) .draggable.is-dragging {
   animation:blink .9s alternate linear infinite;
 }
 
-.about-me .cover-top {
+.about-me .cover-right {
   height: 570px;
   bottom: -70px;
+}
+
+.about-me .cover-top {
+  height: 464px;
+  bottom: 106px;
 }
 
 /*----- Navbar -----*/
