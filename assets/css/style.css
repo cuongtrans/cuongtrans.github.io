@@ -310,13 +310,13 @@ h4 {
 
 .about-me .visual>img, .about-me .visual>svg {
   right: 50%;
-  margin-right: -160px;
+  margin-right: -80px;
 }
 
 .about-me .bg {
     height: 570px;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
 }
 
 .david-wrapper {
