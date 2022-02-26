@@ -279,8 +279,8 @@ h4 {
 }
 
 .about-me {
-   display: grid;
-   grid-template-columns: 1vw minmax(300px,500px) minmax(380px,1fr);
+  display: grid;
+  grid-template-columns: 1vw minmax(300px,500px) minmax(380px,1fr);
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -310,7 +310,7 @@ h4 {
 
 .about-me .visual>img, .about-me .visual>svg {
   right: 50%;
-  margin-right: -200px;
+  margin-right: -140px;
 }
 
 .david-wrapper {
@@ -336,7 +336,7 @@ h4 {
 }
 
 .about-me img {
-  bottom:-130px;
+  bottom:-80px;
 }
 
 .about-me .drag-handle {
@@ -370,7 +370,7 @@ body:not(.no-js) .draggable.is-dragging {
 
 .about-me .cover-top {
   height: 570px;
-  bottom: -80px;
+  bottom: -70px;
 }
 
 /*----- Navbar -----*/
