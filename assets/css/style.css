@@ -313,6 +313,17 @@ h4 {
   margin-right: -160px;
 }
 
+.about-me .visual>img, .about-me .visual>png {
+  right: 50%;
+  margin-right: -160px;
+}
+
+.about-me .bg {
+    height: 570px;
+    position: absolute;
+    bottom: 0;
+}
+
 .david-wrapper {
   width: 813px;
   height: 570px;
