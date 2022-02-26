@@ -320,12 +320,12 @@ svg:not(:root) {
   height: 570px;
   width: 1274px;
   position: absolute;
-  bottom: -70px;
+  bottom: -100px;
 }
 
 .about-me .pull {
   width: 574px;
-  right: -90px;
+  right: -95px;
 }
 
 .david-wrapper {
@@ -354,7 +354,7 @@ svg:not(:root) {
 }
 
 .about-me img {
-  bottom: -80px;
+  bottom: -90px;
 }
 
 .about-me .drag-handle {
