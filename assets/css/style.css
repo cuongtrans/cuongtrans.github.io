@@ -395,9 +395,9 @@ body:not(.no-js) .draggable.is-dragging {
 
 .about-me .cover-top {
   height: 464px;
-  bottom: 35px;
+  bottom: 36px;
   right: 50%;
-  margin-right: -840px;
+  margin-right: -841px;
 }
 
 /*----- Navbar -----*/
