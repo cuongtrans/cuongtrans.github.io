@@ -36,6 +36,10 @@
   box-sizing: border-box;
 }
 
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
 /*----- Main  -----*/
 body {
   background: var(--bg-primary-color);
@@ -86,6 +90,10 @@ h3,
 h4 {
   font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+svg:not(:root) {
+    overflow: hidden;
 }
 
 /*----- Navbar -----*/
@@ -308,15 +316,16 @@ h4 {
   z-index: 1;
 }
 
-.about-me .visual>img, .about-me .visual>svg {
-  right: 50%;
-  margin-right: -200px;
+.about-me .bg {
+  height: 570px;
+  width: 1274px;
+  position: absolute;
+  bottom: -70px;
 }
 
-.about-me .bg {
-    height: 570px;
-    position: absolute;
-    bottom: -86px;
+.about-me .pull {
+  width: 574px;
+  right: -90px;
 }
 
 .david-wrapper {
@@ -335,20 +344,23 @@ h4 {
 }
 
 .about-me img, .about-me svg {
-  width: 574px;
+  width: auto;
   display: block;
   position: absolute;
+}
+
+.about-me img, .about-me svg {
   max-width: 1274px;
 }
 
 .about-me img {
-  bottom:-80px;
+  bottom: -80px;
 }
 
 .about-me .drag-handle {
    position: absolute;
-   right: 0;
-   bottom: 0;
+   right: -100px;
+   bottom: -65px;
 }
 
 body:not(.no-js) .drag-handle.handle-right{
@@ -377,11 +389,15 @@ body:not(.no-js) .draggable.is-dragging {
 .about-me .cover-right {
   height: 570px;
   bottom: -70px;
+  right: 50%;
+  margin-right: -300px;
 }
 
 .about-me .cover-top {
   height: 464px;
-  bottom: 106px;
+  bottom: 35px;
+  right: 50%;
+  margin-right: -840px;
 }
 
 /*----- Navbar -----*/
