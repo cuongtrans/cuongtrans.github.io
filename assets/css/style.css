@@ -325,7 +325,7 @@ svg:not(:root) {
 
 .about-me .pull {
   width: 574px;
-  right: -96px;
+  right: -95px;
 }
 
 .david-wrapper {
@@ -397,7 +397,7 @@ body:not(.no-js) .draggable.is-dragging {
   height: 464px;
   bottom: 36px;
   right: 50%;
-  margin-right: -841px;
+  margin-right: -845px;
 }
 
 /*----- Navbar -----*/
