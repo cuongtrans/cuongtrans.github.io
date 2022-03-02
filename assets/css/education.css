@@ -225,6 +225,7 @@ a {
 .featured-section img {
   vertical-align: middle;
   border-style: none;
+  height: 250px;
 }
 
 .mt-5, .my-5 {
