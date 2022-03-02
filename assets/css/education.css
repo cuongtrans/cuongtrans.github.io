@@ -224,6 +224,7 @@ a {
 
 .featured-section img {
   vertical-align: middle;
+  horizontal-align: middle;
   border-style: none;
   height: 250px;
 }
