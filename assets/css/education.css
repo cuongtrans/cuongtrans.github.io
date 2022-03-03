@@ -10,6 +10,7 @@
   --text-secondary-color: #64707d;
   --bg-primary-color: #FFF;
   --bg-secondary-color: #FAFAFA;
+  --bg-third-color: #FFEC44;
   --other-color: #CCC;
   --navbar-bg: rgba(0, 0, 0, 0.1);
   --rotate-color: #000;
@@ -23,6 +24,7 @@
   --text-secondary-color: #84878C;
   --bg-primary-color: #000;
   --bg-secondary-color: #111;
+  --bg-third-color: #0045BC;
   --other-color: #232323;
   --navbar-bg: rgba(0, 0, 0, 0.4);
   --rotate-color: #FFF;
@@ -293,7 +295,7 @@ h5 {
 #mooc .card {
   border-radius: 5px;
   background: var(--bg-primary-color);
-  box-shadow: 0 6px 10px rgb(0 69 188 / 8%), 0 0 6px rgb(0 69 188 / 5%);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 0 6px rgb(0 0 0 / 5%);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
   display: flex;
@@ -309,7 +311,7 @@ h5 {
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 1px solid rgba(0, 69, 188,.125);
+  border: 2px solid var(--bg-third-color);
   border-radius: 0.25rem;
 }
 
@@ -323,7 +325,7 @@ h5 {
 }
 
 .content .content-overlay {
-  background: rgba(0, 69, 188, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -382,7 +384,7 @@ h5 {
 }
 
 #mooc .card-body {
-  background-color: #0045BC;
+  background-color: var(--bg-third-color);
   padding: 1px;
 }
 
