@@ -351,6 +351,7 @@ h5 {
 .hw-1 {
   height: 85.16px;
   width: 85.16px;
+  align-content: center;
 }  
 
 .mb-3, .my-3 {
