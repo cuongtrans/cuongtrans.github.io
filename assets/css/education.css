@@ -349,8 +349,9 @@ h5 {
 }
 
 .hw-1 {
-  height: 85.16px;
-  width: 85.16px;
+  height: 108px;
+  width: 108px;
+  display: flex;
   align-items: center;
 }  
 
